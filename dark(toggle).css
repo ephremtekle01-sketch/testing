@@ -1,0 +1,23 @@
+/* Default (Light) theme variables */
+body {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Dark theme variables applied when the checkbox is checked */
+body:has(input#dark-mode-toggle:checked) {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+/* Optional: hide the actual checkbox and style the label as a toggle button */
+input#dark-mode-toggle {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    /* add styles for your toggle button here */
+}
